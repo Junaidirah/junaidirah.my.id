@@ -11,7 +11,7 @@ const Header = () => {
     const isDarkMode = document.documentElement.classList.toggle("dark");
     setIsDark(isDarkMode);
     localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-    
+
     // Dispatch custom event to notify other components (like ThreeJS)
     window.dispatchEvent(new Event("themechange"));
   };
@@ -19,8 +19,12 @@ const Header = () => {
   return (
     <header className="bg-surface border-b border-outline-variant sticky top-0 z-50 transition-colors duration-300">
       <div className="flex justify-between items-center max-w-container-max mx-auto px-6 h-16 w-full">
-        <div className="text-lg font-bold tracking-tighter text-blue-900">
-          JUN
+        <div className="flex items-center">
+          <img
+            className="w-12 h-12"
+            src="../src/assets/logo-juna.png"
+            alt="Logo"
+          />
         </div>
         <nav className="hidden md:flex gap-8 items-center">
           <a
@@ -49,13 +53,13 @@ const Header = () => {
           </a>
         </nav>
         <div className="flex items-center gap-4">
-          <button 
-            onClick={toggleTheme} 
+          <button
+            onClick={toggleTheme}
             className="text-primary hover:bg-surface-variant p-2 rounded-full transition-colors flex items-center justify-center"
             aria-label="Toggle dark mode"
           >
             <span className="material-symbols-outlined text-[20px]">
-              {isDark ? 'light_mode' : 'dark_mode'}
+              {isDark ? "light_mode" : "dark_mode"}
             </span>
           </button>
           <button className="bg-primary text-on-primary font-code text-xs tracking-widest px-4 py-2 uppercase hover:opacity-80 transition-all">
