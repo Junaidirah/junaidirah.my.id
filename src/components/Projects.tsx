@@ -1,33 +1,22 @@
 const Projects = () => {
   return (
     <section className="py-xl" id="projects">
-
       {/* Header */}
       <header className="mb-xl border-l-4 border-primary pl-lg">
-        <span className="font-code text-label-caps text-secondary uppercase mb-sm block">
+        {/* <span className="font-code text-label-caps text-secondary uppercase mb-sm block">
           [SYSTEM_STATUS: OPERATIONAL]
-        </span>
+        </span> */}
         <h2 className="font-h1 text-h1 text-primary mb-md">
           Research &amp; Active Projects
         </h2>
-        <p className="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
-          Advancing the frontiers of high-performance computing through
-          physics-driven engineering. My work focuses on the intersection of
-          theoretical fluid dynamics and distributed backend architecture,
-          ensuring absolute reliability in simulation-heavy environments.
-        </p>
       </header>
 
       {/* Ongoing Simulations */}
       <div className="mb-xl">
         <div className="flex items-center justify-between mb-lg border-b border-outline-variant pb-sm">
           <h3 className="font-h2 text-h2 text-primary uppercase tracking-tighter">
-            Ongoing Simulations
+            Ongoing Project
           </h3>
-          <span className="font-code text-xs text-outline flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse inline-block"></span>
-            [LIVE_FEED_V2.0]
-          </span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-md">
@@ -125,7 +114,7 @@ const Projects = () => {
       <div className="mb-xl">
         <div className="flex items-center justify-between mb-lg border-b border-outline-variant pb-sm">
           <h3 className="font-h2 text-h2 text-primary uppercase tracking-tighter">
-            Featured Publications
+            Project
           </h3>
           <span className="font-code text-xs text-outline">[ARCHIVE_ROOT]</span>
         </div>
@@ -282,80 +271,6 @@ const Projects = () => {
                 </li>
               ))}
             </ul>
-          </div>
-
-          {/* Terminal Log */}
-          <div
-            className="border border-outline bg-surface p-md group/terminal cursor-text overflow-hidden"
-            style={{
-              backgroundImage: "radial-gradient(#dce4e1 1px, transparent 1px)",
-              backgroundSize: "24px 24px",
-            }}
-          >
-            <div className="flex justify-between items-center mb-md border-b border-outline pb-xs">
-              <span className="font-code text-xs text-outline uppercase flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-secondary inline-block"></span>
-                terminal_log.json
-              </span>
-              <span className="material-symbols-outlined text-xs text-outline cursor-pointer hover:text-primary transition-colors">
-                content_copy
-              </span>
-            </div>
-            <div className="relative overflow-hidden">
-              <pre className="font-code text-xs leading-relaxed text-on-surface-variant transition-all duration-300 group-hover/terminal:opacity-40">
-                {`{
-  `}
-                <span className="text-secondary font-semibold">"project"</span>
-                {`: `}
-                <span className="text-secondary">"LBM_SOLVER_3"</span>
-                {`,
-  `}
-                <span className="text-secondary font-semibold">"version"</span>
-                {`: `}
-                <span className="text-secondary">"1.0.4-rc"</span>
-                {`,
-  `}
-                <span className="text-secondary font-semibold">
-                  "dependencies"
-                </span>
-                {`: {
-    `}
-                <span className="text-secondary font-semibold">
-                  "cuda_toolkit"
-                </span>
-                {`: `}
-                <span className="text-secondary">&quot;&gt;=11.8&quot;</span>
-                {`,
-    `}
-                <span className="text-secondary font-semibold">"openmpi"</span>
-                {`: `}
-                <span className="text-secondary">"4.1.x"</span>
-                {`
-  },
-  `}
-                <span className="text-secondary font-semibold">"metrics"</span>
-                {`: {
-    `}
-                <span className="text-secondary font-semibold">"precision"</span>
-                {`: `}
-                <span className="text-secondary">"double_fp64"</span>
-                {`,
-    `}
-                <span className="text-secondary font-semibold">
-                  "stability_index"
-                </span>
-                {`: `}
-                <span className="text-primary font-semibold">0.99942</span>
-                {`
-  }
-}`}
-              </pre>
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover/terminal:opacity-100 transition-opacity pointer-events-none">
-                <div className="font-code text-sm text-primary bg-surface-container px-3 py-1 border-r-4 border-primary animate-pulse">
-                  &gt; tail -f simulation.log
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

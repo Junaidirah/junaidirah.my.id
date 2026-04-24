@@ -21,13 +21,9 @@ const Header = () => {
     <header className="bg-surface border-b border-outline-variant sticky top-0 z-50 transition-colors duration-300">
       <div className="flex justify-between items-center max-w-container-max mx-auto px-6 h-16 w-full">
         <div className="flex items-center">
-          <img
-            className="w-12 h-12"
-            src={logoJuna}
-            alt="Logo"
-          />
+          <img className="w-12 h-12" src={logoJuna} alt="Logo" />
         </div>
-        <nav className="hidden md:flex gap-8 items-center">
+        {/* <nav className="hidden md:flex gap-8 items-center">
           <a
             className="font-code text-sm tracking-tight uppercase text-blue-900 border-b-2 border-blue-900 pb-1"
             href="#projects"
@@ -36,23 +32,11 @@ const Header = () => {
           </a>
           <a
             className="font-code text-sm tracking-tight uppercase text-slate-500 hover:text-blue-700 transition-colors duration-150"
-            href="#research"
-          >
-            Research
-          </a>
-          <a
-            className="font-code text-sm tracking-tight uppercase text-slate-500 hover:text-blue-700 transition-colors duration-150"
-            href="#publication"
-          >
-            publication
-          </a>
-          <a
-            className="font-code text-sm tracking-tight uppercase text-slate-500 hover:text-blue-700 transition-colors duration-150"
             href="#contact"
           >
             Contact
           </a>
-        </nav>
+        </nav> */}
         <div className="flex items-center gap-4">
           <button
             onClick={toggleTheme}
