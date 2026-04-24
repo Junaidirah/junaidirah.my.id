@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import logoJuna from "../assets/logo-juna.png";
 
 const Header = () => {
   const [isDark, setIsDark] = useState(false);
@@ -22,7 +23,7 @@ const Header = () => {
         <div className="flex items-center">
           <img
             className="w-12 h-12"
-            src="../src/assets/logo-juna.png"
+            src={logoJuna}
             alt="Logo"
           />
         </div>

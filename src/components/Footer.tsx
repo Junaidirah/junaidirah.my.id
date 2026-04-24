@@ -23,7 +23,7 @@ const Footer = () => {
           </a>
           <a
             className="font-code text-xs tracking-widest uppercase text-slate-500 hover:text-blue-900 underline decoration-1 underline-offset-4 transition-all duration-200 ease-in-out"
-            href="junaidirahmat02@gmail.com"
+            href="mailto:junaidirahmat02@gmail.com"
           >
             Email
           </a>
